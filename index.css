@@ -1,0 +1,107 @@
+﻿#after
+{
+    left:235px;
+    position:absolute;
+    top:60px;
+}
+
+#before
+{
+    left:10px;
+    position:absolute;
+    text-align:right;
+    top:60px;
+    width:200px;
+}
+
+#bottom
+{
+    border-left:thick solid #000;
+    font-size:11px;
+    left:219px;
+    position:absolute;
+    top:120px;
+    width:200px;
+}
+
+#bottomhorizontal
+{
+    border-bottom:thick solid #000;
+    font-size:11px;
+    left:50px;
+    position:absolute;
+    top:120px;
+    width:500px;
+}
+
+#fileNames
+{
+    left:150px;
+    position:absolute;
+    top:220px;
+}
+
+#fileNamesLabel
+{
+    font-size:14px;
+    left:150px;
+    position:absolute;
+    top:200px;
+}
+
+#middle
+{
+    color:red;
+    left:210px;
+    position:absolute;
+    top:60px;
+}
+
+#startButton
+{
+    left:10px;
+    position:absolute;
+    top:250px;
+}
+
+#top
+{
+    border-left:thick solid #000;
+    font-size:11px;
+    left:219px;
+    position:absolute;
+    top:40px;
+    width:200px;
+}
+
+#tophorizontal
+{
+    border-top:thick solid #000;
+    font-size:11px;
+    left:50px;
+    position:absolute;
+    top:35px;
+    width:500px;
+}
+
+#wpm
+{
+    left:10px;
+    position:absolute;
+    top:220px;
+}
+
+#wpmLabel
+{
+    font-size:14px;
+    left:10px;
+    position:absolute;
+    top:200px;
+}
+
+body
+{
+    background-color:#eee;
+    font-family:Consolas;
+    font-size:40px;
+}
