@@ -28,9 +28,9 @@ function StartLoops()
 {
     if (null != textFileInput && "" != textFileInput)
     {
-		textFileInput = textFileInput.replace(/\s\s+/g, ' ');
+        textFileInput = textFileInput.replace(/\s\s+/g, ' ');
 
-		words = textFileInput.split(' ');
+        words = textFileInput.split(' ');
 
         LoadLoop();
     }
@@ -56,12 +56,11 @@ function LoadTextFile(name)
 {
 	if (name === "Mine")
 	{
-		textFileInput = document.getElementById(name).value;
-		
+        textFileInput = document.getElementById(name).value;
 	}
 	else
 	{
-		textFileInput = document.getElementById(name).innerHTML;
+        textFileInput = document.getElementById(name).innerHTML;
 	}
 }
 
