@@ -17,8 +17,6 @@ function HandleStartButtonClick()
 
     var fileNames = document.getElementById("fileNames");
 
-    fileName = fileNames.options[fileNames.selectedIndex].text + ".txt";
-
     LoadTextFile(fileNames.options[fileNames.selectedIndex].text);
 
     setTimeout(StartLoops, 1000);
