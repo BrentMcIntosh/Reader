@@ -1,4 +1,4 @@
-﻿var currentWord;
+var currentWord;
 var fileName;
 var loopCallbackInterval;
 var textFileInput;
@@ -19,7 +19,7 @@ function HandleStartButtonClick()
 
     fileName = fileNames.options[fileNames.selectedIndex].text + ".txt";
 
-    LoadTextFile();
+    LoadTextFile(fileNames.options[fileNames.selectedIndex].text);
 
     setTimeout(StartLoops, 1000);
 }
@@ -50,21 +50,17 @@ function LoadLoop()
     }
 }
 
-function LoadTextFile()
+function LoadTextFile(name)
 {
-    var xmlhttp = new XMLHttpRequest();
-
-    xmlhttp.open("GET", fileName, true);
-
-    xmlhttp.send();
-
-    xmlhttp.onreadystatechange = function ()
-    {
-        if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
-        {
-            textFileInput = xmlhttp.responseText;
-        }
-    }
+	if (name === "Mine")
+	{
+		textFileInput = document.getElementById(name).value;
+		
+	}
+	else
+	{
+		textFileInput = document.getElementById(name).innerHTML;
+	}
 }
 
 function WordLoop(word)
@@ -75,7 +71,7 @@ function WordLoop(word)
 
         var middlePosition = parseInt(word.length / 2);
 
-        if (0 == (word.length % 2))
+        if (0 === (word.length % 2))
         {
             middlePosition--;
         }
