@@ -89,3 +89,4 @@ function WordLoop(word)
         document.getElementById("after").innerHTML = afterLetters;
     }
 }
+
