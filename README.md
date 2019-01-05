@@ -6,6 +6,9 @@ I have included some sample text along with a Text Area for you to enter your ow
 
 You can download and unpack the zip file and then open the index.html file in your browser. 
 
+I got the best results with Chrome.
+
 Once on the index.html page, select your reading speed and the file you are interested in.
 
 The words in the file will display on the screen between the two lines above.
+
