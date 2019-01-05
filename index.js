@@ -28,7 +28,9 @@ function StartLoops()
 {
     if (null != textFileInput && "" != textFileInput)
     {
-        words = textFileInput.split(' ');
+		textFileInput = textFileInput.replace(/\s\s+/g, ' ');
+
+		words = textFileInput.split(' ');
 
         LoadLoop();
     }
