@@ -54,14 +54,14 @@ function LoadLoop()
 
 function LoadTextFile(name)
 {
-	if (name === "Mine")
-	{
+    if (name === "Mine")
+    {
         textFileInput = document.getElementById(name).value;
-	}
-	else
-	{
+    }
+    else
+    {
         textFileInput = document.getElementById(name).innerHTML;
-	}
+    }
 }
 
 function WordLoop(word)
